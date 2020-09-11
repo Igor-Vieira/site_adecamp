@@ -58,7 +58,7 @@ body {
 
 .button {
     color: #043353;
-    width: 4vw;
+    width: 5vw;
     height: 40px;
     display: flex;
     align-items: center;
@@ -117,7 +117,6 @@ body {
     color: #fff;
     font-weight: 200;
     font-size: 370px;
-    margin-top: 200px;
     font-family: Yellowtail;
 }
 
@@ -130,9 +129,9 @@ body {
     font-weight: 200;
 }
 
-.ajust a img{
+.ajust img{
     font-size: 32px;
-    margin-top: 200px;
+    
 }
 
 .content {
@@ -141,7 +140,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fcfcfc;
+    background-color: #fafafa;
 }
 
 .contentHeader {
@@ -169,49 +168,108 @@ body {
 }
 
 .card {
-    width: 600px;
-    border-radius: 20px;
+    width: 20vw;
+    height: 300px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
-    padding: 40px;
+    border-radius: 20px;
+    padding: 30px;
     background-color: #fff;
-    box-shadow: 20px 23px 20px -21px rgba(4,51,83,0.2);
+    box-shadow: 13px 13px 20px -21px rgba(4,51,83,0.2);
+}
+
+.card 
+h1,
+h2,
+h3,
+p {
+    color: #043353;
 }
 
 .card h1 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
-    color: #043353;
-    margin-bottom: 10px;
 }
 
 .card h2 {
     font-size: 18px;
     font-weight: 400;
-    color: #043353;
-    margin-bottom: 30px;
 }
 
 .card h3 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #043353;
-    margin-bottom: 100px;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .card p {
-    font-size: 22px;
     font-weight: 300;
-}
-
-.division {
-    height: 600px;
-    width: 1px;
-    background-color: #043353;
 }
 
 ::selection {
     background-color: #043353;
     color: #fff;
+}
+
+@media (max-width: 1500px) {
+
+    .header ul li a {
+        font-size: 12px;
+    }
+
+    .header ul {
+        width: 50vw;
+    }
+
+    .button {
+        width: 10vw;
+    }
+
+    .ajust h1 {
+        font-size: 250px;
+    }
+
+    .ajust p {
+        margin-left: 210px;
+        margin-top: 40px;
+        font-size: 22px;
+    }
+
+    .card {
+        width: 25vw;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .ajust h1 {
+        font-size: 180px;
+    }
+
+    .ajust p {
+        font-size: 15px;
+        margin-left: 150px;
+        margin-top: 60px;
+    }
+
+    .header ul li a{
+        display: none;
+    }
+
+    .button {
+        width: 20vw;
+    }
+
+    .contentBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 70vw;
+        margin-bottom: 50px;
+    }
 }
