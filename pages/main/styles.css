@@ -57,7 +57,6 @@ body {
 }
 
 .button {
-    color: #043353;
     width: 5vw;
     height: 40px;
     display: flex;
@@ -68,6 +67,12 @@ body {
     background-color: #fff;
     transition: 0.4s;
     cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    color: #043353;
+    font-weight: 400;
 }
 
 .button:hover {
@@ -90,6 +95,9 @@ body {
 
 .stickybutton {
     background-color: #043353;
+}
+
+.stickybutton a {
     color: #fff;
 }
 
