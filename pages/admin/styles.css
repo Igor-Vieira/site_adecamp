@@ -8,12 +8,14 @@
 body {
     font-family: Roboto;
     display: flex;
+    background-color: #f5f5f5;
 }
 
 header {
     width: 100vw;
     height: 70px;
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,8 +36,10 @@ header {
 }
 
 .menu {
-    width: 20vw;
+    width: 19.05vw;
     height: 100vh;
+    position: fixed;
+    z-index: 1;
     background-color: #043353;
     display: flex;
     justify-content: center;
@@ -77,7 +81,71 @@ header {
 /*RegistrtoCultos*/
 
 .cultoContent {
-    width: 84vw;
-    height: 100vh;
-    background-color: #ffde00;
+    width: 99vw;
+    padding-bottom: 30px;
+}
+
+.cultoHeader {
+    padding: 155px 450px 80px;
+}
+
+.cultoHeader h1 {
+    font-weight: 400;
+    color: #043353;
+    font-size: 34px;
+}
+
+.cultoHeader p {
+    font-weight: 300;
+    font-size: 13.5px;
+}
+
+.cultoBody {
+    padding-left: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cultoBody input {
+    width: 30vw;
+    height: 6vh;
+    padding: 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 30px;
+    font-family: Roboto;
+}
+
+input::placeholder {
+    color: rgb(212, 212, 212);
+}
+
+.cultoBody p {
+    margin-bottom: 10px;
+}
+
+.cultoBody textarea {
+    width: 30vw;
+    height: 20vh;
+    outline: none;
+    padding: 30px;
+    font-size: 18px;
+    font-family: Roboto;
+    margin-bottom: 30px;
+}
+
+.cultoBody button {
+    width: 30vw;
+    height: 70px;
+    background-color: #043353;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    color: #FFF;
+    transition: 0.4s;
+}
+
+.cultoBody button:hover {
+    background-color: #0a3c5e;
 }
